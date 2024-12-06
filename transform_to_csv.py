@@ -55,9 +55,9 @@ def create_db_from_df(df, db_path, table_name='my_table'):
     with sqlite3.connect(db_path) as conn:
         df.to_sql(table_name, conn, index=False)
 
-fasta_path = '/home/valentin-rexer/uni/UofM/datascience/datasets/uniprot_sprot.fasta'
+fasta_path = '/user/datascience/uniprot_sprot.fasta'
 columns = ["Type", "Accession", "EntryName", "Description", "Organism", "TaxonomyID", "GeneName", "ProteinExistence", "SequenceVersion", "AASequence"]
-out_db_path = '/home/valentin-rexer/uni/UofM/datascience/final_project/swissprot.db'
+out_db_path = '/home/user/datascience/swissprot.db'
 
 rows = []  # Store rows in a list instead of constantly concatenating DataFrames
 current_seq = None

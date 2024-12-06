@@ -23,8 +23,8 @@ def extract_ec_number(description):
 
     return None
 
-path = '/home/valentin-rexer/uni/UofM/datascience/datasets/uniprot_sprot.dat'
-out_db_path = '/home/valentin-rexer/uni/UofM/datascience/datasets/swissprot.dat.db'
+path = '/home/user/datascience/uniprot_sprot.dat'
+out_db_path = '/home/user/datascience/swissprot.dat.db'
 
 rows = []
 columns = ["ID","AC_Number","Description", "EC_Number", "Sequence"]
